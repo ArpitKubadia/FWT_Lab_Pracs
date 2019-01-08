@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+	    background-image: url(download.jpg);
+	    background-size: cover;
+	}
+		table{
+			border-collapse: collapse;
+	    	text-align: center;
+	    	width: 90%;
+		}
+
+		th{
+			border-collapse: collapse;
+			padding: 10px;
+	    	font-family: Arial;
+		}
+		.myform{
+			width: 200px;
+		}
+
+	</style>	
+	<title>
+		Login
+	</title>
+</head>
+<body>
+
+	<h1 align="center">Register</h1>
+	<form>
+	<table align="center">
+		<tr>
+			<th>First Name<br>
+			<input type="text" name="first_name" class="myform">
+			</th>
+			
+		</tr>
+		<tr>
+			<th>Last Name<br>
+				<input type="text" name="last_name" class="myform">
+			</th>
+		</tr>
+		<tr>
+			<th>Email Id<br>
+				<input type="text" name="email" class="myform">
+			</th>
+		</tr>
+		<tr>
+			<th>Password<br>
+				<input type="password" name="password" minlength="8" class="myform">
+			</th>
+		</tr>
+		<tr>
+			<th>Repeat Password<br>
+				<input type="password" name="re_password" minlength="8" class="myform">
+			</th>
+		</tr>
+		<tr>
+			<th>Gender<br>
+				<div style="text-align: left; padding-left: 46%">
+				<input type="radio" name="gender" value="male" checked align="left"> Male<br>
+  				<input type="radio" name="gender" value="female" align="left"> Female<br>
+  				<input type="radio" name="gender" value="other" align="left"> Other</div>
+			</th>
+		</tr>
+		<tr>
+			<th>Birthday<br>
+			<input type="date" name="bday" max="2000-01-02" class="myform"></th>
+		</tr>
+
+	</table>
+	<br>
+	<button style="display: block;margin: 0 auto;" formaction="dashboard.html">
+		<input type="button" value="Login">
+	</button>
+	</form>
+</body>
+</html>
